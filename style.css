@@ -47,8 +47,19 @@ h1 {
     height: 50%;
     flex-shrink: 0;
     display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
 }
 
-/* .immagine {
+.immagine {
+    background-color: aqua;
+    height: 80%;
+}
+.img {
+    width: 100%;
     height: 100%;
-} */
+}
+.testo {
+    background-color: coral;
+}
