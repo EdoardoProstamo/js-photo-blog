@@ -5,4 +5,46 @@
     box-sizing: border-box;
 }
 
+/* General */
 
+
+
+
+
+/* Header */
+header {
+    background-color: aqua;
+    height: 100px;
+}
+h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* .container {
+    height: 700px;
+    width: 900px;
+    background-color: blue;
+    
+} */
+/* .box {
+    background-color: blue ;
+    width: calc(97% / 3);
+    height: 300px;
+    flex-shrink: 0;
+    display: flex;
+}
+
+.immagine {
+    height: 100%;
+} */
