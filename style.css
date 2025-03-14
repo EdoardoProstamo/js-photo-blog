@@ -37,14 +37,17 @@ h1 {
     height: 700px;
     width: 900px;
     background-color: blue;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
 }
-/* .box {
+.box {
     background-color: gold ;
     width: calc(97% / 3);
-    height: 300px;
+    height: 50%;
     flex-shrink: 0;
     display: flex;
-} */
+}
 
 /* .immagine {
     height: 100%;
