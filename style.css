@@ -6,7 +6,9 @@
 }
 
 /* General */
-
+main {
+    padding-left: 17%;
+}
 
 
 
@@ -31,20 +33,19 @@ h1 {
 
 
 
-/* .container {
+.container {
     height: 700px;
     width: 900px;
     background-color: blue;
-    
-} */
+}
 /* .box {
-    background-color: blue ;
+    background-color: gold ;
     width: calc(97% / 3);
     height: 300px;
     flex-shrink: 0;
     display: flex;
-}
+} */
 
-.immagine {
+/* .immagine {
     height: 100%;
 } */
