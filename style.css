@@ -6,13 +6,11 @@
 }
 
 /* General */
-body {
-    background-image: url(img/cork.png);
-}
 main {
     padding-left: 17%;
     padding-top: 3%;
     padding-bottom: 1%;
+    background-image: url(img/cork.png);
 }
 
 
@@ -20,16 +18,15 @@ main {
 
 /* Header */
 header {
-    background-color: #d8d8d8;
-    opacity: 80%;
     height: 100px;
+    background-image: url(img/wall.png);
+
 }
 h1 {
     text-align: center;
     padding-top: 20px;
     font-size: 60px;
     font-family: "Edu TAS Beginner", sans-serif;
-    opacity: unset;
 }
 
 /* Main */
