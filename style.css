@@ -20,7 +20,8 @@ main {
 
 /* Header */
 header {
-    background-color: aqua;
+    background-color: #d8d8d8;
+    opacity: 80%;
     height: 100px;
 }
 h1 {
@@ -28,19 +29,18 @@ h1 {
     padding-top: 20px;
     font-size: 60px;
     font-family: "Edu TAS Beginner", sans-serif;
+    opacity: unset;
 }
 
 /* Main */
 .container {
-    height: 700px;
     width: 900px;
-    background-color: blue;
     display: flex;
     flex-wrap: wrap;
     gap: 13px;
 }
 .box {
-    background-color: gold ;
+    background-color: #ffffff ;
     width: calc(97% / 3);
     flex-shrink: 0;
     display: flex;
@@ -50,8 +50,8 @@ h1 {
 }
 
 .immagine {
-    background-color: aqua;
-    height: 80%;
+    background-color: #92c952;
+    height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,7 +62,6 @@ h1 {
     height: 100%;
 }
 .testo {
-    background-color: coral;
     font-family: "Sometype Mono", monospace;
 }
 
