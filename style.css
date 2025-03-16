@@ -8,6 +8,7 @@
 /* General */
 main {
     padding-left: 17%;
+    padding-top: 3%;
 }
 
 
@@ -47,6 +48,10 @@ h1 {
 .immagine {
     background-color: aqua;
     height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
 }
 .img {
     width: 100%;
@@ -56,3 +61,4 @@ h1 {
     background-color: coral;
     font-family: "Sometype Mono", monospace;
 }
+
