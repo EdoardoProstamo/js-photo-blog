@@ -7,9 +7,7 @@
 
 /* General */
 main {
-    padding-left: 17%;
-    padding-top: 3%;
-    padding-bottom: 1%;
+    padding: 50px 260px 15px 210px;
     background-image: url(img/cork.png);
 }
 
@@ -46,11 +44,7 @@ h1 {
 }
 
 .immagine {
-    background-color: #92c952;
     height: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: x-large;
 }
 .img {
@@ -67,3 +61,50 @@ h1 {
     top: -5px;
     left: 46%;
 }
+
+/* MEDIA QUERIES */
+
+/** Portatile s **/
+@media screen and (min-width:991px) and (max-width: 1200px){
+    main {
+        padding: 50px 50px 15px;
+        display: flex;
+        justify-content: center;
+    }
+    .container {
+        width: 900px;
+    }
+}
+/** /Portatile s **/
+
+/** Tablet **/
+@media screen and (max-width:991px){
+    main {
+        padding: 50px 87px 15px;
+        display: flex;
+        justify-content: center;
+    }
+    .box {
+        width: calc(97% / 2);
+    }
+    .container {
+        width: 600px;
+    }
+}
+/** /Tablet **/
+
+/* Mobile */
+@media screen and (max-width:767px){
+    main {
+        padding: 100px 130px 15px;
+        display: flex;
+        justify-content: center;
+    }
+    .box {
+        width: 290px;
+    }
+    .container {
+        width: 290px;
+    }
+}
+/* /Mobile */
