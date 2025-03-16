@@ -14,8 +14,6 @@ main {
 }
 
 
-
-
 /* Header */
 header {
     height: 100px;
@@ -44,6 +42,7 @@ h1 {
     flex-direction: column;
     gap: 15px;
     padding: 15px;
+    position: relative;
 }
 
 .immagine {
@@ -61,4 +60,10 @@ h1 {
 .testo {
     font-family: "Sometype Mono", monospace;
 }
-
+.pin {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: -5px;
+    left: 46%;
+}
