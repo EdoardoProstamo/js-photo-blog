@@ -6,9 +6,13 @@
 }
 
 /* General */
+body {
+    background-image: url(img/cork.png);
+}
 main {
     padding-left: 17%;
     padding-top: 3%;
+    padding-bottom: 1%;
 }
 
 
