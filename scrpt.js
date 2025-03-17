@@ -51,7 +51,7 @@
 ]
 
 
-const imgElement = document.getElementById('prova');
+const imgElement = document.getElementById('container-box');
 const endpoint = 'https://lanciweb.github.io/demo/api/pictures/';
 console.log(imgElement);
 
@@ -66,7 +66,27 @@ axios.get(endpoint)
   const arrayElements = response.data;
   for (let i = 0; i < arrayElements.length; i++) {
 
-    result += `<div id="${arrayElements[i].id}" class="box">
+    result += `<div id="${arrayElements[i].id}" class="container">
+            <div class="box">
+                <div class="immagine">
+                    <img class="img" src="${arrayElements[i].url}" alt="${arrayElements[i].title}">
+                </div>
+                <div class="testo">
+                    <p>"${arrayElements[i].date}"</p>
+                    <p>"${arrayElements[i].title}"</p>
+                </div>
+                <img class="pin" src="img/pin.svg" alt="Pin">
+            </div>
+        </div>`
+
+            
+  }
+
+  imgElement.innerHTML = result;
+});
+
+
+{/* <div id="${arrayElements[i].id}" class="box">
                 <div class="immagine">
                     <img class="img" src="${arrayElements[i].url}" alt="${arrayElements[i].title}">
                 </div>
@@ -75,8 +95,4 @@ axios.get(endpoint)
                     <p>${arrayElements[i].title}</p>
                 </div>
                 <img class="pin" src="img/pin.svg" alt="Pin">
-            </div>`
-  }
-
-  imgElement.innerHTML = result;
-});
+            </div> */}
