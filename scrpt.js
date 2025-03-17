@@ -51,99 +51,32 @@
 ]
 
 
-
-// const projectImages = [
-//     {
-//       img: "img-content/summer-1.jpeg",
-//       title: "Accusamos Beatae Ad Facilis Cum Similique Qui Sunt"
-//     },
-//     {
-//     img: "img-content/summer-2.jpg",
-//     title: "Reprehenderit Est Deserunt Velit Ipsam"
-//     },
-//     {
-//     img: "img-content/summer-3.jpg",
-//     title: "Officia Porro Iure Quia Iusto Qui Ipsa Ut Modi"
-//     },
-//     {
-//     img: "img-content/summer-4.jpeg",
-//     title: "Culpa Odio Esse Rerum Omnis Laboriosam Voluptate Repudiandae"
-//     },
-//     {
-//     img: "img-content/summer-5.jpg",
-//     title: "Natus Nisi Omnis Corporis Facere Molestiae Rerum In"
-//     },
-//     {
-//     img: "img-content/summer-6.jpg",
-//     title: "Accusamos Ea Et Amet Sequi Nemo"
-//     }
-    
-//   ];
-  
-  
-  
-//   //render html
-//   //create html element
-  
-//   const parentElement = document.querySelector('.container');
-  
-//   //aggancia il risultato ad un elemento parent
-//   renderHTML(parentElement, projectImages);
-  
-//   //funzione
-//   function renderHTML(parent, elements) {
-  
-//     //per ogni elemento creo html di riferimento
-//     //dopo aver creato l'html lo 'appendo' al parent element
-  
-//     let items = '';
-//     for (let i=0; i < elements.length; i++) {
-//       const currentElement = elements[i];
-  
-//       console.log(currentElement);
-  
-//       items += createHTMLElement(currentElement);
-//     }
-  
-//     //inserimento del prodotto del ciclo nell'innerHTML del parent
-//     parent.innerHTML = items;
-//   }
-  
-  
-//   function createHTMLElement(object) {
-  
-//     return `<div class="box">
-//                 <div class="immagine">
-//                     <img class="img" src="${object.img}" alt="${object.title}">
-//                 </div>
-//                 <div class="testo">
-//                     <p>${object.title}</p>
-//                 </div>
-//                 <img class="pin" src="img/pin.svg" alt="Pin">
-//             </div>`;
-//   }
-
-const imgElement = document.getElementById('1');
+const imgElement = document.getElementById('prova');
 const endpoint = 'https://lanciweb.github.io/demo/api/pictures/';
 console.log(imgElement);
 
+let result = '';
 
 //Axios
 axios.get(endpoint)
 .then((response) => {
 
   console.log(response.data);
-  const photo = response.data.id;
-  console.log(photo);
 
+  const arrayElements = response.data;
+  for (let i = 0; i < arrayElements.length; i++) {
 
+    result += `<div id="${arrayElements[i].id}" class="box">
+                <div class="immagine">
+                    <img class="img" src="${arrayElements[i].url}" alt="${arrayElements[i].title}">
+                </div>
+                <div class="testo">
+                    <p>${arrayElements[i].date}</p>
+                    <p>${arrayElements[i].title}</p>
+                </div>
+                <img class="pin" src="img/pin.svg" alt="Pin">
+            </div>`
+  }
 
-})
-// const imgContainer = 'container';
-
-// axios.get(endpoint)
-// .then((response) => {
-//   let items = '';
-
-//   posts
-// })
+  imgElement.innerHTML = result;
+});
