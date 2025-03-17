@@ -9,6 +9,8 @@
 main {
     padding: 50px 260px 15px 210px;
     background-image: url(img/cork.png);
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -51,8 +53,17 @@ h1 {
     width: 100%;
     height: 100%;
 }
-.testo {
+.date {
     font-family: "Sometype Mono", monospace;
+    color: #8c8b89;
+    font-weight: bold;
+}
+
+.title {
+    font-family:"Edu TAS Beginner", sans-serif;
+    font-weight: bolder;
+    font-size: x-large;
+    text-transform: uppercase;
 }
 .pin {
     width: 25px;
