@@ -102,8 +102,18 @@ axios.get(endpoint)
 // Bonus
 // Spostandosi col mouse sopra le foto, queste si zoommano, ruotano di 10 gradi e la loro ombra aumenta, il tutto in manierà fluida. Inoltre il mouse diventa un puntatore, per far capire all’utente che può cliccare
 
-
-const overlayShow = document.querySelector('.overlay');
+//Compare overlay
+const overlayShow = document.querySelectorAll('.container');
 console.log(overlayShow);
+
+for (let i = 0; i < overlayShow.length; i++) {
+  overlayShow[i].addEventListener("click", function () {}
+)}
+
+//Bottone chiude overlay
 const buttonClose = document.querySelector('.btn');
 console.log(buttonClose);
+
+buttonClose.addEventListener('click', function () {
+
+})
