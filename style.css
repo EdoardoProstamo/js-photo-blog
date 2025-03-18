@@ -103,7 +103,15 @@ h1 {
 }
 
 
+.box:hover {
+    transform: scale(1.1) rotate(10deg);
+    box-shadow: 5px 5px 5px 5px #363636;
+    cursor: zoom-in;
+}
 
+.box:hover .pin {
+    display: none;
+}
 
 
 
