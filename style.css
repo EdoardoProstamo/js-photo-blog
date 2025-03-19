@@ -88,6 +88,9 @@ h1 {
     align-items: center;
     gap: 20px;
 
+    
+}
+.hidden {
     display: none;
 }
 

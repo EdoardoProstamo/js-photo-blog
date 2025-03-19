@@ -103,17 +103,43 @@ axios.get(endpoint)
 // Spostandosi col mouse sopra le foto, queste si zoommano, ruotano di 10 gradi e la loro ombra aumenta, il tutto in manierà fluida. Inoltre il mouse diventa un puntatore, per far capire all’utente che può cliccare
 
 //Compare overlay
-const overlayShow = document.querySelectorAll('.container');
-console.log(overlayShow);
+// const containerElement = document.getElementsByClassName('.container');
+// console.log(containerElement);
+// const overlayShow = document.getElementsByClassName('.overlay');
+// console.log(overlayShow);
+// const imgReplace = document.getElementsByClassName('img');
+// console.log(imgReplace);
 
-for (let i = 0; i < overlayShow.length; i++) {
-  overlayShow[i].addEventListener("click", function () {}
-)}
 
-//Bottone chiude overlay
-const buttonClose = document.querySelector('.btn');
-console.log(buttonClose);
 
-buttonClose.addEventListener('click', function () {
+// 	for (let i = 0; i < containerElement.length; i++) {
 
-})
+// 		containerElement[i].addEventListener("click", function (e) {
+
+// 			const pageImg = containerElement[i].querySelector('.img-2');
+// 			console.log(pageImg.src);
+// 			// console.log(pageImg.alt);
+// 			imgReplace.src = pageImg.src;
+// 			console.log(imgReplace.src);
+
+// 			overlayShow.classList.remove('.hidden');
+
+			
+// 		}
+// 	  )}
+
+// //Bottone chiude overlay
+// const buttonClose = document.querySelector('.btn');
+// console.log(buttonClose);
+
+// buttonClose.addEventListener('click', function (e) {
+
+// 	overlayShow.classList.add('.hidden');
+// })
+
+
+try {
+	nonExistentFunction();
+  } catch (error) {
+	console.log("Errore!");
+}
