@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,13 +13,15 @@
     <!-- Google-Fonts date -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
     <!-- /Google-Fonts date -->
 
     <title>Photo Blog</title>
     <!-- Collegamento css -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Intestazione pagina -->
     <header>
@@ -31,7 +34,7 @@
         <div id="container-box" class="container">
             <div class="box">
                 <div class="immagine">
-                    <img class="img" src="" alt="Img one">
+                    <img class="img-1" src="" alt="Img one">
                 </div>
                 <div class="testo">
                     <p class="date">Date</p>
@@ -40,9 +43,9 @@
                 <img class="pin" src="img/pin.svg" alt="Pin">
             </div>
         </div>
-        <div class="overlay hidden">
+        <div id="overlay-id" class="overlay hidden">
             <button class="btn">Chiudi</button>
-            <img class="img-2" src="" alt="">
+            <img id="replace-img" class="img-2" src="" alt="">
         </div>
     </main>
     <!-- /Corpo pagina -->
@@ -53,4 +56,5 @@
     <!-- Collegamento js -->
     <script src="scrpt.js"></script>
 </body>
+
 </html>
